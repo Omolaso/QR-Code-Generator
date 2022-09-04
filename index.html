@@ -4,16 +4,39 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>QR Code Generator</title>
+        <link rel="icon" type="image/png" href="./images/favi.png">
+        <!-- <link rel="icon" type="image/x-icon" href="/images/img.png"> -->
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./dist/output.css">
     </head>
-    <body class="w-full bg-purple-600">
-       <div class=" container bg-red-600">
-            <h2 class="">Hello World</h2>
-       </div>
-        <div>
-            <p>HI</p>
+
+    <body class="">
+        <header class="text-white text-3xl font-bold">
+            <h2 class="py-5 text-center">QUICK RESPONSE CODE GENERATOR</h2>
+        </header>
+
+        <div id="wrapper" class="md:flex  items-center justify-around">
+            <section class="container justify-center flex-1">
+                <h1 class="font-extrabold text-2xl mb-3">QR CODE GENERATOR</h1>
+                <p>QR Codes are easier to navigate websites with mobile phones. 
+                    Generate your QR Code below for seamless experience.
+                </p>
+
+                <form id="submit">
+                    <input type="url" title="URL" name="url" id="url" placeholder="Enter a URL"> <br>
+                    <select name="size" title="size" id=""></select>
+                </form>
+            </section>
+
+            <section id="dummy-image" class="flex-0">
+                <img 
+                    src="./images/favi-colored.png" 
+                    alt="dummy-QR-Code"
+                    class="w-1/2"
+                    id="image1"
+                />
+            </section>
         </div>
     </body>
 </html>

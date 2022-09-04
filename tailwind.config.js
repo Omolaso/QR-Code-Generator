@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*.html'],
+  content: ['./*.{html,js}'],
   theme: {
     screens:{
       'sm': '680px',
@@ -10,8 +10,8 @@ module.exports = {
       '2xl':'1536px'
     },
     extend: {
-      colors:{
-        
+      fontFamily:{
+        // sans: []
       }
     },
   },
