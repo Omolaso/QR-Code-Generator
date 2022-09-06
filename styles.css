@@ -11,10 +11,13 @@
 }
 
 header{
-    min-height: 10vh;
     background: rgb(255, 82, 108);
 }
 
-#wrapper{
-    min-height: 90vh;
+body{
+    min-height: 100vh;
+}
+
+#btn{
+    background: rgb(255, 82, 108);
 }
