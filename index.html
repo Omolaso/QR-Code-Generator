@@ -16,10 +16,10 @@
             <h2 class="py-5 text-center">QUICK RESPONSE CODE GENERATOR</h2>
         </header>
 
-        <div id="wrapper" class="flex px-10 justify-around items-center">
+        <div id="wrapper" class="flex px-10 mt-4 justify-around items-center">
             <section class="md:justify-center self-start md:self-center mt-8 md:w-1/3 w-full max-w-xl">
                 <h1 class="font-extrabold text-2xl mb-3">QR CODE GENERATOR</h1>
-                <p>QR Codes are easier to navigate websites with mobile phones. 
+                <p>QR Codes are easier to use for navigating websites with mobile phones. 
                     Generate your QR Code below for seamless experience.
                 </p>
 
@@ -35,8 +35,8 @@
                         > 
 
                     <select title="size" class="border mt-2 w-full p-2 cursor-pointer" id="size">
-                        <option value="100"> 100 X 100</option>
-                        <option value="200" selected> 200 X 200</option>
+                        <option value="100" selected> 100 X 100</option>
+                        <option value="200"> 200 X 200</option>
                         <option value="300"> 300 X 300</option>
                         <option value="400"> 400 X 400</option>
                     </select>
@@ -55,20 +55,38 @@
             </section>
         </div>
 
-        <div id="spin" class="mt-8">
-            <img 
-                src="./images/spinner.svg" 
-                alt="Loading..."
-                id="spinner"
-                class="w-24 mx-auto hidden"
-            >
+        <div id="made" >
+
+            <div id="spin" class="mt-8">
+                <img 
+                    src="./images/spinner.svg" 
+                    alt="Loading..."
+                    id="spinner"
+                    class="w-24 mx-auto hidden"
+                >
+            </div>
+    
+            <div id="generated-code" class=" mt-10 mb-2 flex items-center justify-center"></div>
+            <div id="download" class=" mb-4 flex items-center justify-center hover:opacity-70 transition text-white"></div>
+
         </div>
 
-        <div id="generated-code"></div>
+
+
+
+
 
         <script src="script.js"></script>
+
+         <!-- CODE GENERATOR LIBRARY (qrcode.js) SCRIPT GOTTEN FROM (cdnjs.com) -->
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" 
-            integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" 
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" 
+                crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+         <!-- CODE GENERATOR LIBRARY (qrcode.js) SCRIPT GOTTEN FROM (cdnjs.com) -->
+        
+        
     </body>
 </html>
