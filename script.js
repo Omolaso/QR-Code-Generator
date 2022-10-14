@@ -23,7 +23,7 @@ form.addEventListener('submit', (e) => {
 
        setTimeout(() => {
             const saveURL = generated.querySelector("img").src;
-            // console.log(saveURL);
+            console.log(saveURL);
             downloadCode(saveURL);
        }, 50); //setTimeout cause image link will not be available immediately.
 
